@@ -1,0 +1,49 @@
+.navbar {
+	height: 120px;
+	border-radius: 0;
+	margin-bottom: 0;
+	z-index: 10;
+	.container-fluid {
+		height: 110px;
+
+		.navbar-header {
+			.navbar-brand {
+				padding: 15px;
+				height: auto;
+				margin-left: 10px;
+				color: #fff;
+			}
+		}
+		.navbar-collapse {
+			.navbar-nav {
+				li {
+					height: 110px;
+					padding: 36px 5px;
+
+					a {
+						text-transform: uppercase;
+						text-decoration: none;
+						color: #fff;
+						padding: 10px;
+						border-bottom: 3px solid transparent;
+
+						&:hover, &:focus, &.active {
+							text-decoration: none;
+							border-bottom: 3px solid black;
+							background: transparent;
+						}
+					}
+				}
+				.dropdown {
+					.dropdown-menu {
+						margin-top: -20px;
+						li {
+							height: auto;
+							padding: 0px 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

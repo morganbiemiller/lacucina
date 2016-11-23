@@ -1,0 +1,1 @@
+{"version":3,"sources":["application.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"application.js","sourcesContent":["$('#nav li').click(function(e) {\n    $('#nav li').removeClass('active');\n    $(this).addClass('active');\n});"],"sourceRoot":"/source/"}
