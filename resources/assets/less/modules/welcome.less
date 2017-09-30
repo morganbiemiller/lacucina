@@ -7,21 +7,23 @@
 	margin-bottom: -86px;
 	display: inline-block;
 }
-.welcome__wrapper {
+.welcome__landing {
 	z-index: -2;
 	width: 100%;
-	height: 100%;
+	height: 810px;
 	display: inline-block;
+	margin-bottom: 100px;
+	position: relative;
 }
-.welcome__images {
+.welcome__image {
 	z-index: -3;
-
-	img {
-		width: 50%;
-		height: auto;
-		display: inline-block;
-		float: left;
-	}	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 810px;
+	background-image: url('/img/mushrooms.jpg');
+	background-size: cover;
 }
 
 .welcome__overlay {
@@ -29,25 +31,122 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	height: 810px;
+	background-color: rgba(214, 212, 200, 0.7);
 }
 
-.welcome__logo-box {
-	width: 100%;
-	height: auto;
+.welcome__landing-content {
+	width: 70%;
+	height: 400px;
 	position: absolute;
-	top: 200px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
 	z-index: 20;
-	.welcome__logo {
-		text-align: center;
-		background-color: rgba(255, 255, 255, 0.5);
-		margin: 0 auto;
-		width: 400px;
-		height: 300px;
-		img {
-			width: 300px;
-			height: auto;
-		}
+	text-align: center;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.welcome__logo {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	vertical-align: middle;
+	border-right: 1px solid white;
+	padding-right: 100px;
+}
+
+.welcome__tagline {
+	display: inline-block;
+	float: left;
+	text-align: left;
+	font-size: 30px;
+	color: #fff;
+	width: 50%;
+	vertical-align: middle;
+	padding-left: 100px;
+}
+.welcome__event {
+	.medium;
+}
+
+.welcome__section {
+	max-width: 1000px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+.welcome__wrapper {
+	display: flex;
+	justify-content: space-between;
+	h4 {
+		font-size: 16px;
+		.medium;
 	}
 }
+.welcome__icon {
+	width: auto;
+	height: 100px;
+    margin: 0 auto 40px;
+    text-align: center;
+	margin-bottom: 20px;
+	text-align: center;
+	opacity: .8;
+	img {
+		width: auto;
+		height: 100%;
+	}
+}
+
+.welcome__header {
+	font-size: 40px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	text-align: center;
+}
+/* All */
+@media (max-width: 768px) { 
+	.welcome__landing {
+		height: 500px;
+	}
+	.welcome__image {
+		height: 500px;
+	}
+
+	.welcome__overlay {
+		height: 500px;
+	}
+	.welcome__landing-content {
+		width: 80%;
+	}
+	.welcome__logo {
+		display: none;
+	}
+
+	.welcome__tagline {
+		width: 100%;
+		padding-left: 0px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.welcome__images {
+		display: block;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

@@ -44,36 +44,32 @@ footer ul li {
   font-size: 11px;
 }
 .navbar {
-  height: 120px;
   border-radius: 0;
   margin-bottom: 0;
   z-index: 10;
-}
-.navbar .container-fluid {
-  height: 110px;
+  padding: 20px;
 }
 .navbar .container-fluid .navbar-header .navbar-brand {
-  padding: 15px;
   height: auto;
-  margin-left: 10px;
   color: #fff;
+  width: 100px;
+  padding: 0;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav li {
-  height: 110px;
-  padding: 36px 5px;
+  padding: 10px 16px;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav li a {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  padding: 10px;
   border-bottom: 3px solid transparent;
+  padding: 12px 0;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav li a:hover,
 .navbar .container-fluid .navbar-collapse .navbar-nav li a:focus,
 .navbar .container-fluid .navbar-collapse .navbar-nav li a.active {
   text-decoration: none;
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid white;
   background: transparent;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
@@ -82,6 +78,12 @@ footer ul li {
 .navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li {
   height: auto;
   padding: 0px 5px;
+}
+.navbar-toggle {
+  margin: 0;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
 }
 .light-italic {
   font-weight: 300;
@@ -145,46 +147,133 @@ footer ul li {
   margin-bottom: -86px;
   display: inline-block;
 }
-.welcome__wrapper {
+.welcome__landing {
   z-index: -2;
   width: 100%;
-  height: 100%;
+  height: 810px;
   display: inline-block;
+  margin-bottom: 100px;
+  position: relative;
 }
-.welcome__images {
+.welcome__image {
   z-index: -3;
-}
-.welcome__images img {
-  width: 50%;
-  height: auto;
-  display: inline-block;
-  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 810px;
+  background-image: url('/img/mushrooms.jpg');
+  background-size: cover;
 }
 .welcome__overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 810px;
+  background-color: rgba(214, 212, 200, 0.7);
 }
-.welcome__logo-box {
-  width: 100%;
-  height: auto;
+.welcome__landing-content {
+  width: 70%;
+  height: 400px;
   position: absolute;
-  top: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 20;
-}
-.welcome__logo-box .welcome__logo {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  right: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.welcome__logo {
+  display: inline-block;
+  float: left;
+  text-align: center;
   margin: 0 auto;
-  width: 400px;
-  height: 300px;
+  width: 50%;
+  vertical-align: middle;
+  border-right: 1px solid white;
+  padding-right: 100px;
 }
-.welcome__logo-box .welcome__logo img {
-  width: 300px;
-  height: auto;
+.welcome__tagline {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  font-size: 30px;
+  color: #fff;
+  width: 50%;
+  vertical-align: middle;
+  padding-left: 100px;
 }
+.welcome__event {
+  font-weight: 500;
+}
+.welcome__section {
+  max-width: 1000px;
+  width: 70%;
+  margin: 0 auto;
+}
+.welcome__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.welcome__wrapper h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.welcome__icon {
+  width: auto;
+  height: 100px;
+  margin: 0 auto 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  opacity: .8;
+}
+.welcome__icon img {
+  width: auto;
+  height: 100%;
+}
+.welcome__header {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 60px;
+  text-align: center;
+}
+/* All */
+@media (max-width: 768px) {
+  .welcome__landing {
+    height: 500px;
+  }
+  .welcome__image {
+    height: 500px;
+  }
+  .welcome__overlay {
+    height: 500px;
+  }
+  .welcome__landing-content {
+    width: 80%;
+  }
+  .welcome__logo {
+    display: none;
+  }
+  .welcome__tagline {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .welcome__images {
+    display: block;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=app.css.map */

@@ -1,35 +1,32 @@
 .navbar {
-	height: 120px;
 	border-radius: 0;
 	margin-bottom: 0;
 	z-index: 10;
+	padding: 20px;
 	.container-fluid {
-		height: 110px;
-
 		.navbar-header {
 			.navbar-brand {
-				padding: 15px;
 				height: auto;
-				margin-left: 10px;
 				color: #fff;
+				width: 100px;
+				padding: 0;
 			}
 		}
 		.navbar-collapse {
 			.navbar-nav {
 				li {
-					height: 110px;
-					padding: 36px 5px;
+					padding: 10px 16px;
 
 					a {
 						text-transform: uppercase;
 						text-decoration: none;
 						color: #fff;
-						padding: 10px;
 						border-bottom: 3px solid transparent;
+						padding: 12px 0;
 
 						&:hover, &:focus, &.active {
 							text-decoration: none;
-							border-bottom: 3px solid black;
+							border-bottom: 1px solid white;
 							background: transparent;
 						}
 					}
@@ -47,3 +44,12 @@
 		}
 	}
 }
+.navbar-toggle {
+	margin: 0;
+	.icon-bar {
+		background-color: white;
+	}
+}
+
+
+

@@ -3,10 +3,13 @@
 <head>
 	<title>La Cucina</title>
 
-	<!-- Stylesheets -->
+	<!-- Fonts -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,400italic,500,700,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="/css/app.css">
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">La Cucina Catering & Events</a>
+				<a class="navbar-brand" href="/"><img src="/img/new-logo.png"></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
