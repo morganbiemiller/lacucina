@@ -1,5 +1,7 @@
 @extends('master')
 
+@include('templates.header')
+
 @section('content')
 <div class="welcome">
 	<div class="welcome__landing">

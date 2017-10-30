@@ -20,28 +20,45 @@ img {
   font-size: 24px;
   margin-bottom: 20px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #3c3c3c;
+  border-bottom: 1px solid rgba(60, 60, 60, 0.2);
 }
-footer {
+.about-maria {
+  line-height: 30px;
+  font-size: 15px;
+  padding-top: 40px;
+}
+.maria-photo {
+  padding-top: 20px;
+}
+.events-photo {
+  padding-top: 35px;
+}
+.events-services li {
+  margin-bottom: 5px;
+}
+.footer {
   height: 60px;
   margin-top: 20px;
   z-index: 10;
-  color: #fff;
+  color: #000000;
   display: inline-block;
   width: 100%;
   position: fixed;
   bottom: 10px;
 }
-footer ul {
+.footer ul {
   list-style-type: none;
 }
-footer ul li {
+.footer ul li {
   display: inline-block;
   float: right;
   height: 60px;
   font-weight: 400;
   padding: 20px;
   font-size: 11px;
+}
+.footer i {
+  color: #000000;
 }
 .navbar {
   border-radius: 0;
@@ -62,14 +79,14 @@ footer ul li {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid transparent;
   padding: 12px 0;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav li a:hover,
 .navbar .container-fluid .navbar-collapse .navbar-nav li a:focus,
 .navbar .container-fluid .navbar-collapse .navbar-nav li a.active {
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #FFFFFF;
   background: transparent;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
@@ -79,11 +96,50 @@ footer ul li {
   height: auto;
   padding: 0px 5px;
 }
-.navbar-toggle {
+.navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a {
+  color: #000000;
+  border-bottom: 0;
+  opacity: 0.6;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover,
+.navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:focus,
+.navbar .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a.active {
+  opacity: 1;
+}
+.navbar .navbar-toggle {
   margin: 0;
 }
-.navbar-toggle .icon-bar {
+.navbar .navbar-toggle .icon-bar {
   background-color: white;
+}
+.navbar--dark .container-fluid .navbar-header .navbar-brand {
+  color: #000000;
+}
+.navbar--dark .container-fluid .navbar-collapse .navbar-nav li a {
+  color: #000000;
+}
+.navbar--dark .container-fluid .navbar-collapse .navbar-nav li a:hover,
+.navbar--dark .container-fluid .navbar-collapse .navbar-nav li a:focus,
+.navbar--dark .container-fluid .navbar-collapse .navbar-nav li a.active {
+  border-color: #000000;
+}
+.navbar--dark .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
+  margin-top: -20px;
+}
+.navbar--dark .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li {
+  height: auto;
+  padding: 0px 5px;
+}
+.navbar--dark .navbar-toggle {
+  margin: 0;
+}
+.navbar--dark .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background: transparent;
 }
 .light-italic {
   font-weight: 300;

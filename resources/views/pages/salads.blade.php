@@ -1,9 +1,11 @@
 @extends('master')
 
+@include('templates.header-dark')
+
 @section('content')
 
 <div class="container menu horsdoeuvres">
-	<div class="page__title">Salads</div>
+	<div class="page__title">SALADS</div>
 	<div class="row">
 		<div class="col-xs-12">
 			<small>Small bowl serves 15-20 & Large bowl serves 35-40</small>
