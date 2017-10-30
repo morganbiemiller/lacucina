@@ -1,9 +1,24 @@
+body,
+html {
+  height: 100%;
+}
 body {
   background-color: white;
   font-family: 'Fira Sans', sans-serif;
   font-size: 13px;
   margin: 0;
   color: #3c3c3c;
+}
+.body-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.content-wrapper {
+  -ms-flex: 1;
+  flex: 1;
 }
 a {
   text-decoration: underline;
@@ -41,10 +56,9 @@ img {
   margin-top: 20px;
   z-index: 10;
   color: #000000;
-  display: inline-block;
   width: 100%;
-  position: fixed;
   bottom: 10px;
+  position: relative;
 }
 .footer ul {
   list-style-type: none;
@@ -196,11 +210,9 @@ img {
 }
 .welcome {
   width: 100%;
-  height: 100%;
   padding: 0;
   position: relative;
   margin-top: -120px;
-  margin-bottom: -86px;
   display: inline-block;
 }
 .welcome__landing {
