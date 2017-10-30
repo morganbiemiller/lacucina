@@ -1,14 +1,16 @@
 @extends('master')
 
+@include('templates.header-dark')
+
 @section('content')
 
 <div class="container menu horsdoeuvres">
-	<div class="page__title">Buffets</div>
+	<div class="page__title">BUFFETS</div>
 	<div class="row">
-		<div class="col-xs-12">
-			<small>Please keep in mind that these are just a few of our most popular menus. We are able to do a much greater variety of food than what is listed. 
-			Please don't hesitate to contact us with any ideas you may have.</small>
-			
+		<small>Please keep in mind that these are just a few of our most popular menus. We are able to do a much greater variety of food than what is listed. 
+		Please don't hesitate to contact us with any ideas you may have.</small>
+		<div class="col-xs-12 col-md-4">
+
 			<div class="lc-section-title">Italian</div>
 
 			<div class="menu__item">
@@ -77,7 +79,8 @@
 				</div>
 				<div class="menu__item-price">$18 per person</div>
 			</div>
-			
+		</div>
+		<div class="col-xs-12 col-md-4">
 			<div class="lc-section-title">Barbeque</div>
 			<small>15 person minimum</small>
 		
@@ -128,7 +131,8 @@
 				</div>
 				<div class="menu__item-price">$18 per person</div>
 			</div>
-
+		</div>
+		<div class="col-xs-12 col-md-4">
 			<div class="lc-section-title">Lunch style</div>
 			<small>15 person minimum</small>
 			

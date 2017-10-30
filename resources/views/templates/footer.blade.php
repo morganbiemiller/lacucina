@@ -1,7 +1,9 @@
-    	
-		
-
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </body>
-</html>
+<div class="container-fluid">
+    <div class="footer">
+        <ul>
+            <li>© 2017 La Cucina. All rights reserved.</li>
+        </ul>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-yelp"></i>
+    </div>
+</div>

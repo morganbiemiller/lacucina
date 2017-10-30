@@ -1,9 +1,11 @@
 @extends('master')
 
+@include('templates.header-dark')
+
 @section('content')
 
 <div class="container menu horsdoeuvres">
-	<div class="page__title">Hors D'oeuvres</div>
+	<div class="page__title">HORS D'OEUVRES</div>
 	<div class="page__desc">See serving size in description</div>
 
 	<div class="row">

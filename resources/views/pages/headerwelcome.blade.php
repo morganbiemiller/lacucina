@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			
             <ul class="nav navbar-nav navbar-right" id="nav">
                 <li><a href="{{ url('/about') }}">About</a></li>
-                <li><a href="{{ url('/services') }}">Events & Services</a></li>
+                <li><a href="{{ url('/events') }}">Services</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menus <span class="caret"></span></a>
                     <ul class="dropdown-menu">
