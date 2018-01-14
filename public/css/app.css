@@ -51,6 +51,12 @@ img {
 .events-services li {
   margin-bottom: 5px;
 }
+.container-fluid:after,
+.container-fluid:before,
+.row:after,
+.row:before {
+  content: none;
+}
 .footer {
   height: 60px;
   margin-top: 20px;
@@ -79,6 +85,17 @@ img {
   margin-bottom: 0;
   z-index: 10;
   padding: 20px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar .container-fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
 }
 .navbar .container-fluid .navbar-header .navbar-brand {
   height: auto;
@@ -180,7 +197,7 @@ img {
   font-family: navLinks;
   src: url(/fonts/copperplate-regular.ttf);
 }
-.menu__item {
+.lc-section title {
   padding: 10px;
   display: inline-block;
   width: 100%;

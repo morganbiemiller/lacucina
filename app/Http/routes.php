@@ -14,7 +14,7 @@
 Route::get('/', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 Route::get('services', 'PagesController@services');
-Route::get('contact', 'PagesController@contact');
+// Route::get('contact', 'PagesController@contact');
 
 Route::get('horsdoeuvres', 'PagesController@horsdoeuvres');
 Route::get('salads', 'PagesController@salads');
@@ -22,5 +22,7 @@ Route::get('pans', 'PagesController@pans');
 Route::get('buffets', 'PagesController@buffets');
 Route::get('desserts', 'PagesController@desserts');
 
+Route::get('contact', 'ContactController@create')->name('contact.create');
+Route::post('contact', 'ContactController@store')->name('contact.store');
 
 
